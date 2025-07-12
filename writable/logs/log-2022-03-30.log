@@ -1,0 +1,990 @@
+ERROR - 2022-03-30 09:04:42 --> Error connecting to the database: Unknown database 'ukom-kasir2'
+CRITICAL - 2022-03-30 09:33:20 --> Invalid file: pesanan/menu/menu.php
+#0 C:\xampp\htdocs\ukom-kasir\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pesanan/menu/me...')
+#1 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('pesanan/menu/me...', Array, true)
+#2 C:\xampp\htdocs\ukom-kasir\app\Controllers\Menu.php(38): view('pesanan/menu/me...', Array)
+#3 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Menu->index()
+#4 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+ERROR - 2022-03-30 09:48:38 --> Unknown column 'id_users' in 'where clause'
+CRITICAL - 2022-03-30 09:48:38 --> Unknown column 'id_users' in 'where clause'
+#0 C:\xampp\htdocs\ukom-kasir\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ukom-kasir\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ukom-kasir\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ukom-kasir\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ukom-kasir\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ukom-kasir\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ukom-kasir\app\Controllers\Menu.php(235): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Menu->actionPesan('1')
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#9 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-03-30 09:57:29 --> Too few arguments to function CodeIgniter\HTTP\URI::getSegment(), 0 passed in C:\xampp\htdocs\ukom-kasir\app\Views\layout.php on line 219 and at least 1 expected
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\layout.php(219): CodeIgniter\HTTP\URI->getSegment()
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\View\View.php(226): CodeIgniter\View\View->render('layout', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('pesanan/menu/me...', Array, true)
+#5 C:\xampp\htdocs\ukom-kasir\app\Controllers\Menu.php(38): view('pesanan/menu/me...', Array)
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Menu->index()
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-30 10:07:53 --> Undefined variable $no2
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\layout.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 219)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\View\View.php(226): CodeIgniter\View\View->render('layout', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/invoi...', Array, true)
+#5 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(47): view('transaksi/invoi...', Array)
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->invoice('1')
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-30 10:07:57 --> Undefined variable $no2
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\layout.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 219)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\View\View.php(226): CodeIgniter\View\View->render('layout', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/invoi...', Array, true)
+#5 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(47): view('transaksi/invoi...', Array)
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->invoice('1')
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-30 10:08:19 --> Undefined variable $no2
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\layout.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 219)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\View\View.php(226): CodeIgniter\View\View->render('layout', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/invoi...', Array, true)
+#5 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(47): view('transaksi/invoi...', Array)
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->invoice('1')
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-30 10:10:06 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ukom-kasir\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ukom-kasir\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ukom-kasir\app\Views\pesanan\order.php(61): CodeIgniter\Model->__call('JMasakan', Array)
+#3 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('pesanan/order', Array, true)
+#6 C:\xampp\htdocs\ukom-kasir\app\Controllers\Order.php(29): view('pesanan/order', Array)
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Order->index()
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#9 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-03-30 11:27:32 --> Undefined variable $menu
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 17)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->index()
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-03-30 12:36:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:' at line 3
+CRITICAL - 2022-03-30 12:36:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:' at line 3
+#0 C:\xampp\htdocs\ukom-kasir\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ukom-kasir\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ukom-kasir\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ukom-kasir\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ukom-kasir\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ukom-kasir\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(58): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#9 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-03-30 12:37:00 --> Undefined variable $ModelCustom
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(59): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-03-30 12:38:35 --> Unknown column 'tanggal' in 'where clause'
+CRITICAL - 2022-03-30 12:38:35 --> Unknown column 'tanggal' in 'where clause'
+#0 C:\xampp\htdocs\ukom-kasir\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ukom-kasir\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ukom-kasir\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ukom-kasir\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ukom-kasir\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ukom-kasir\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(58): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#9 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-03-30 12:40:51 --> Invalid file: <!-- DEBUG-VIEW START 2 APPPATH\Views\transaksi\transaksi.php -->
+<!-- DEBUG-VIEW START 1 APPPATH\Views\layout.php -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Riwayat Transaksi - Kasir Restoran</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="text" sizes="16x16" href="http://localhost:8080/assets/images/favicon.png">
+    <!-- Pignose Calender -->
+    <link href="http://localhost:8080/assets/plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <!-- Chartist -->
+    <link rel="stylesheet" href="http://localhost:8080/assets/plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="http://localhost:8080/assets/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <link href="http://localhost:8080/assets/plugins/tables/css/datatable/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="http://localhost:8080/assets/plugins/tables/css/datatable/buttons.bootstrap4.min.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link href="http://localhost:8080/assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.css">
+
+
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap4.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css"> -->
+</head>
+
+<body>
+
+        <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <div class="brand-logo">
+                <a href="http://localhost:8080/index.php/dashboard">
+                    <b class="logo-abbr"><i class="fa-solid fa-cash-register text-white"></i></b>
+                    <!-- <span class="logo-compact"><img src="?= base_url('') ?>/assets/images/logo-compact.png" alt=""></span> -->
+                    <span class="brand-title">
+
+                        <h3 class="fa-cashier text-white"><i class="fa-solid fa-cash-register"></i> Kasir</h3>
+
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content clearfix">
+
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-left">
+                </div>
+                <div class="header-right">
+                    <ul class="clearfix">
+
+                        <li class="icons dropdown">
+                            <div class="user-img c-pointer position-relative" data-toggle="dropdown">
+                                <span class="mr-2 medium">manajer</span>
+                                <!-- <span class="activity active"></span> -->
+                                <img src="http://localhost:8080/upload/image_profile/1648606824_1e17623ed1db660268dd.png" height="40" width="40" alt="">
+                            </div>
+                            <div class="drop-down dropdown-profile dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="http://localhost:8080/index.php/profile"><i class="icon-user"></i> <span>Profile</span></a>
+                                        </li>
+                                        <!-- <li>
+                                                <a href="#"><i class="icon-envelope-open"></i> <span>Inbox</span> <div class="badge gradient-3 badge-pill badge-primary">3</div></a>
+                                            </li> -->
+
+                                        <hr class="my-2">
+                                        <!-- <li>
+                                                <a href="#"><i class="icon-lock"></i> <span>Lock Screen</span></a>
+                                            </li> -->
+                                        <li><a href="http://localhost:8080/index.php/logout"><i class="icon-key"></i><span>Logout</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar">
+            <div class="nk-nav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label">Dashboard</li>
+                    <li>
+                        <a class="" href="http://localhost:8080/index.php/dashboard" aria-expanded="false">
+                            <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
+                        </a>
+
+                    </li>
+                                            <li class="nav-label">Kelola Kasir</li>
+                        <li class="mega-menu mega-menu-sm">
+                            <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                                <i class="icon-list menu-icon"></i><span class="nav-text">Pesanan</span>
+                            </a>
+                            <ul aria-expanded="false">
+                                <li><a class="" href="http://localhost:8080/index.php/menu">Menu</a></li>
+                                <li><a class="" href="http://localhost:8080/index.php/order/manajer">Riwayat Order</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="mega-menu mega-menu-sm">
+                            <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                                <i class="icon-wallet menu-icon"></i><span class="nav-text">Transaksi</span>
+                            </a>
+                            <ul aria-expanded="false">
+                                <li><a class="active" href="http://localhost:8080/index.php/transaksi">Riwayat Transaksi</a></li>
+                            </ul>
+                        </li>
+                        <li class="mega-menu mega-menu-sm">
+                            <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                                <i class="icon-note menu-icon"></i><span class="nav-text">Log Aktivitas</span>
+                            </a>
+                            <ul aria-expanded="false">
+                                <li><a class="" href="http://localhost:8080/index.php/log-aktivitas">Riwayat Aktivitas</a></li>
+                            </ul>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <div class="row page-titles mx-0">
+                <div class="col p-md-0">
+                    <ol class="breadcrumb">
+                        <!-- <= ($uri->getSegment(1) == 'dashboard' ? 'active' : null) ?> -->
+
+                        <li class="breadcrumb-item"><a href="http://localhost:8080/index.php/dashboard">Dashboard</a></li>
+
+                                                                                                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Transaksi</a></li>
+                                                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Tanggal</a></li>
+                                                                        </ol>
+                </div>
+            </div>
+
+            
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title d-inline">Riwayat Transaksi</h4>
+                    <p class="text-muted">filter tanggal:</p>
+                    <!-- Nav tabs -->
+                    <form action="http://localhost:8080/index.php/transaksi/tanggal" method="post">
+                        <div class="basic-form">
+                            <div class="form-row">
+                                <div class="form-group col-md-3">
+                                    <label class="mr-sm-2">Tanggal Awal :</label>
+                                    <input type="date" class="form-control mb-2" name="tanggal_awal" id="">
+                                </div>
+                                <div class="form-group col-md-3">
+
+                                    <label class="mr-sm-2">Tanggal Akhir</label>
+                                    <input type="date" class="form-control mb-2" name="tanggal_akhir" id="">
+                                </div>
+                                <div class="form-group col-md-3 align-self-center">
+
+                                    <button type="submit" class="btn btn-primary mb-1">Cari</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title d-inline p-2">Riwayat Transaksi</h4>
+
+                    <div class="table-responsive">
+                        <table id="example" class="table table-bordered verticle-middle table-hover">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">NO</th>
+                                    <th class="text-center">Nama Kasir</th>
+                                    <th class="text-center">Tanggal</th>
+                                    <th class="text-center">No Meja</th>
+                                    <th class="text-center">Jumlah Pesanan</th>
+                                    <th class="text-center">Total Harga</th>
+                                    <th class="text-center">Uang</th>
+                                    <th class="text-center">Kembali</th>
+                                    <th class="text-center"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                                                                                                                            <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="text-center">kasir</td>
+                                            <td class="text-center">30-03-2022</td>
+                                            <td class="text-center">10</td>
+                                            <td class="text-center">7</td>
+                                            <td>Rp171.000</td>
+                                            <td>Rp200.000</td>
+                                            <td>Rp29.000</td>
+                                            <td class="text-center"><a href="http://localhost:8080/index.php/transaksi/3/invoice"><i data-toggle="tooltip" data-placement="top" title="" data-original-title="Invoice" class="fas fa-file-invoice text-danger"></i></td>
+                                        </tr>
+                                                                            <tr>
+                                            <td class="text-center">2</td>
+                                            <td class="text-center">kasir</td>
+                                            <td class="text-center">30-03-2022</td>
+                                            <td class="text-center">3</td>
+                                            <td class="text-center">1</td>
+                                            <td>Rp17.000</td>
+                                            <td>Rp17.000</td>
+                                            <td>Rp0</td>
+                                            <td class="text-center"><a href="http://localhost:8080/index.php/transaksi/2/invoice"><i data-toggle="tooltip" data-placement="top" title="" data-original-title="Invoice" class="fas fa-file-invoice text-danger"></i></td>
+                                        </tr>
+                                                                            <tr>
+                                            <td class="text-center">3</td>
+                                            <td class="text-center">kasir</td>
+                                            <td class="text-center">29-03-2022</td>
+                                            <td class="text-center">1</td>
+                                            <td class="text-center">6</td>
+                                            <td>Rp114.000</td>
+                                            <td>Rp114.000</td>
+                                            <td>Rp0</td>
+                                            <td class="text-center"><a href="http://localhost:8080/index.php/transaksi/1/invoice"><i data-toggle="tooltip" data-placement="top" title="" data-original-title="Invoice" class="fas fa-file-invoice text-danger"></i></td>
+                                        </tr>
+                                                                                                </tbody>
+                            <tfoot>
+                                <tr>
+
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th class="text-right">Total Harga Keseluruhan :</th>                                    <th class="">Rp302.000</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy; Designed & Developed by <a href="#">Yuriko Farhan</a> 2022</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.js"></script>
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- ajax -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+    <script src="http://localhost:8080/assets/plugins/common/common.min.js"></script>
+    <script src="http://localhost:8080/assets/js/custom.min.js"></script>
+    <script src="http://localhost:8080/assets/js/settings.js"></script>
+    <script src="http://localhost:8080/assets/js/gleek.js"></script>
+    <script src="http://localhost:8080/assets/js/styleSwitcher.js"></script>
+
+    <!-- Chartjs -->
+    <script src="http://localhost:8080/assets/plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="http://localhost:8080/assets/plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+    <script src="http://localhost:8080/assets/plugins/d3v3/index.js"></script>
+    <script src="http://localhost:8080/assets/plugins/topojson/topojson.min.js"></script>
+    <script src="http://localhost:8080/assets/plugins/datamaps/datamaps.world.min.js"></script>
+    <!-- Morrisjs -->
+    <script src="http://localhost:8080/assets/plugins/raphael/raphael.min.js"></script>
+    <script src="http://localhost:8080/assets/plugins/morris/morris.min.js"></script>
+    <!-- Pignose Calender -->
+    <script src="http://localhost:8080/assets/plugins/moment/moment.min.js"></script>
+    <script src="http://localhost:8080/assets/plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="http://localhost:8080/assets/plugins/chartist/js/chartist.min.js"></script>
+    <script src="http://localhost:8080/assets/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+    <script src="http://localhost:8080/assets/js/dashboard/dashboard-1.js"></script>
+
+
+    <script src="http://localhost:8080/assets/plugins/tables/js/jquery.dataTables.min.js"></script>
+    <script src="http://localhost:8080/assets/plugins/tables/js/datatable/dataTables.bootstrap4.min.js"></script>
+    <script src="http://localhost:8080/assets/plugins/tables/js/datatable-init/datatable-basic.min.js"></script>
+
+    <script src="http://localhost:8080/assets/plugins/moment/moment.js"></script>
+    <script src="http://localhost:8080/assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+
+
+    <script>
+        (function($) {
+            "use strict"
+
+            new quixSettings({
+                version: "light", //2 options "light" and "dark"
+                layout: "vertical", //2 options, "vertical" and "horizontal"
+                navheaderBg: "color_1", //have 10 options, "color_1" to "color_10"
+                headerBg: "color_1", //have 10 options, "color_1" to "color_10"
+                sidebarStyle: "vertical", //defines how sidebar should look like, options are: "full", "compact", "mini" and "overlay". If layout is "horizontal", sidebarStyle won't take "overlay" argument anymore, this will turn into "full" automatically!
+                sidebarBg: "color_1", //have 10 options, "color_1" to "color_10"
+                sidebarPosition: "fixed", //have two options, "static" and "fixed"
+                headerPosition: "fixed", //have two options, "static" and "fixed"
+                containerLayout: "wide", //"boxed" and  "wide". If layout "vertical" and containerLayout "boxed", sidebarStyle will automatically turn into "overlay".
+                direction: "ltr" //"ltr" = Left to Right; "rtl" = Right to Left
+            });
+
+        })(jQuery);
+         //muncul modal error
+    </script>
+    <script>
+            </script>
+    <script type="text/javascript">
+        function fileValidation() {
+            var fileInput = document.getElementById('file');
+            var filePath = fileInput.value;
+            var allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+            if (!allowedExtensions.exec(filePath)) {
+                fileInput.value = '';
+                var reader = new FileReader();
+                document.getElementById('imagePreview').innerHTML = '';
+                return false;
+            } else {
+                //Image preview
+                if (fileInput.files && fileInput.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        document.getElementById('imagePreview').innerHTML = '<img src="' + e.target.result + '"class="img-thumbnail"/>';
+                    };
+                    reader.readAsDataURL(fileInput.files[0]);
+                }
+            }
+        }
+    </script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable({
+                dom: 'Bfrtip',
+                buttons: [{
+                    extend: 'copy',
+                    className: 'btn-white',
+                    footer: true,
+                }, {
+                    extend: 'csv',
+                    className: 'btn-info',
+                    footer: true,
+                }, {
+                    extend: 'excel',
+                    className: 'btn-success',
+                    footer: true,
+                }, {
+                    extend: 'pdf',
+                    className: 'btn-danger',
+                    footer: true,
+                }, ],
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\Views\layout.php -->
+
+<!-- DEBUG-VIEW ENDED 2 APPPATH\Views\transaksi\transaksi.php -->
+
+#0 C:\xampp\htdocs\ukom-kasir\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('<!-- DEBUG-VIEW...')
+#1 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('<!-- DEBUG-VIEW...', Array, true)
+#2 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(60): view('<!-- DEBUG-VIEW...')
+#3 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#4 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-03-30 12:52:36 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#2 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#3 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(60): App\Controllers\Transaksi->index(Array)
+#4 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-30 12:52:43 --> Undefined variable $uri
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(60): App\Controllers\Transaksi->index(Array)
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-30 12:54:05 --> Undefined variable $cari
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 58)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(60): App\Controllers\Transaksi->index(Array)
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-30 13:03:01 --> Call to undefined method App\Models\TransaksiModel::between
+#0 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(54): CodeIgniter\Model->__call('between', Array)
+#1 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#2 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#3 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-30 13:19:30 --> syntax error, unexpected token "<="
+#0 C:\xampp\htdocs\ukom-kasir\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\ukom-kasir\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-03-30 13:22:50 --> syntax error, unexpected token "<="
+#0 C:\xampp\htdocs\ukom-kasir\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\ukom-kasir\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-03-30 13:23:34 --> syntax error, unexpected token "<="
+#0 C:\xampp\htdocs\ukom-kasir\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\ukom-kasir\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-03-30 13:24:04 --> Undefined variable $tanggal_awal
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 63)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(62): App\Controllers\Transaksi->index(Array)
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-30 13:24:41 --> Undefined variable $tanggal_awal
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 63)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(64): App\Controllers\Transaksi->index(Array)
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-30 13:24:56 --> Undefined variable $nama
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 83)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->index()
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-30 13:25:37 --> Undefined variable $nama
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 80)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->index()
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-30 13:30:21 --> Undefined variable $nama
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->index()
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-30 13:31:07 --> syntax error, unexpected token "<"
+#0 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#2 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#3 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->index()
+#4 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-03-30 13:31:13 --> Undefined variable $nama
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->index()
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-30 13:32:28 --> Undefined variable $tgl
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 80)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->index()
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-30 13:32:38 --> Undefined variable $nama
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->index()
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-30 13:32:54 --> Undefined variable $nama
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->index()
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-30 13:34:45 --> Undefined variable $nama
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->index()
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-30 13:35:46 --> Undefined variable $nama
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->index()
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-30 13:37:35 --> Undefined variable $nama
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->index()
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-30 13:40:28 --> Undefined variable $nama
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->index()
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-30 13:40:57 --> Undefined variable $nama
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->index()
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-30 13:42:06 --> Undefined variable $tanggal_awal
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(64): App\Controllers\Transaksi->index(Array)
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-30 13:45:11 --> Undefined variable $tanggal_awal
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(65): App\Controllers\Transaksi->index(Array)
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-30 13:45:20 --> Undefined variable $tanggal_awal
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(65): App\Controllers\Transaksi->index(Array)
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-30 13:46:06 --> Undefined variable $tanggal_awal
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(65): App\Controllers\Transaksi->index(Array)
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-30 13:47:08 --> Undefined variable $title
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 9)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(65): App\Controllers\Transaksi->index(Array)
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-30 13:47:18 --> Undefined variable $tanggal_awal
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(65): App\Controllers\Transaksi->index(Array)
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-30 13:49:01 --> Undefined variable $tanggal_awal
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(30): view('transaksi/trans...', Array, Array)
+#5 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(65): App\Controllers\Transaksi->index(Array)
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-30 13:50:00 --> Undefined variable $nama
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 83)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(37): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(67): App\Controllers\Transaksi->index(Array)
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-30 13:51:06 --> Undefined variable $nama
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 83)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(37): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(67): App\Controllers\Transaksi->index(Array)
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-30 13:52:00 --> Undefined variable $nama
+#0 C:\xampp\htdocs\ukom-kasir\app\Views\transaksi\transaksi.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 83)
+#1 C:\xampp\htdocs\ukom-kasir\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ukom-kasir\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ukom-kasir\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/trans...', Array, true)
+#4 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(37): view('transaksi/trans...', Array)
+#5 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(60): App\Controllers\Transaksi->index(Array)
+#6 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->filterTanggal()
+#7 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-30 13:53:56 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Pa...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\ukom-kasir\app\Controllers\Transaksi.php(22): strtotime(NULL)
+#2 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(832): App\Controllers\Transaksi->index()
+#3 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#4 C:\xampp\htdocs\ukom-kasir\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ukom-kasir\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\ukom-kasir\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
