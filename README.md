@@ -21,8 +21,8 @@ Aplikasi Kasir berbasis web sederhana untuk kebutuhan **Uji Kompetensi (UKOM)**.
 | Komponen     | Teknologi       |
 |--------------|-----------------|
 | Backend      | PHP (CodeIgniter 4) |
-| Frontend     | HTML, CSS, JavaScript, Bootstrap 4/5 |
-| Database     | MySQL / MariaDB |
+| Frontend     | HTML, CSS, JavaScript, Bootstrap 4 |
+| Database     | MySQL |
 | Library Tambahan | jQuery, DataTables |
 
 ---
