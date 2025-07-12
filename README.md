@@ -1,4 +1,4 @@
-# Aplikasi Kasir UKOM – CodeIgniter & Bootstrap
+# Website Aplikasi Kasir – CodeIgniter 4 & Bootstrap
 
 Aplikasi Kasir berbasis web sederhana untuk kebutuhan **Uji Kompetensi (UKOM)**. Dibuat menggunakan framework **CodeIgniter 4** dan **Bootstrap** untuk tampilan antarmuka yang responsif.
 
